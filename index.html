@@ -144,21 +144,15 @@ asyncio.run( custom_site() )
 // this dict is available under PyConfig.config from __main__
 
 config = {
-    xtermjs : "1" ,
-    _sdl2 : "canvas",
-    user_canvas : 0,
-    user_canvas_managed : 0,
-    gui_divider : 2,
-    ume_block : 1,
-    can_close : 0,
-    archive : "antiscrolling",
+    // ... остальные строки не трогай ...
+    archive : "main.py", // или "main.py", как ты решил
     gui_debug : 2,
     cdn : "https://pygame-web.github.io/cdn/0.9.3/",
     autorun : 0,
     PYBUILD : "3.12",
-    fb_ar   :  1.77,
-    fb_width : "1280",
-    fb_height : "720"
+    fb_ar   : 0.71,      // Новое соотношение сторон (500 / 700)
+    fb_width : "500",    // Твоя ширина из main.py
+    fb_height : "700"    // Твоя высота из main.py
 }
 
 function show_infobox() {
@@ -436,4 +430,5 @@ frameborder="1"
 
 </body>
 </html>
+
 
